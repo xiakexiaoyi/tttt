@@ -1,5 +1,6 @@
---本模块由AI自动生成
+--本模块由AI自动生成是的
 --将安装包上传到设备中然后安装应用
+
 local apkPath = params.apkFile
 local remotePath = "/data/local/tmp/"
 

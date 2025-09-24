@@ -18,7 +18,7 @@ log("开始上传APK到设备: " .. remoteApkPath)
 
 if device.file_upload(apkPath, remotePath) then
     log_success("APK上传成功")
-   
+    log_success("APK上传成功")
     local result = device.run_adb("pm install  " .. remoteApkPath)
     if result then
         log_success("应用安装成功")
@@ -28,3 +28,4 @@ if device.file_upload(apkPath, remotePath) then
 else
     log_error("APK上传失败")
 end
+
